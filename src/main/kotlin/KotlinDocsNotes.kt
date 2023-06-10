@@ -51,4 +51,24 @@ fun main() {
         print(letter)
         letter++
     }
+
+//    control sequences:
+//    '\n' is the newline character;
+//
+//    '\t' is the tab character;
+//
+//    '\r' is the carriage return character;
+//
+//    '\\' is the backslash character itself;
+//
+//    '\'' is the single quote mark;
+//
+//    '\"' is the double quote mark.
+
+    println("\n kot")
+    println("\t kot")
+    println("\r kot")
+    println('\\')
+    println('\'')
+    println('\"')
 }
