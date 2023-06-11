@@ -1,3 +1,5 @@
+package kotlin.hyperskill
+
 fun main() {
     //Note that all branch conditions are checked sequentially
     //until one of them is satisfied. So only the first suitable branch is executed.

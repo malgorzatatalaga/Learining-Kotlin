@@ -1,3 +1,5 @@
+package kotlin.hyperskill
+
 fun main() {
     val time = readLine()?.toInt()
     val workTime = 9..18

@@ -1,3 +1,5 @@
+package kotlin.hyperskill
+
 import java.util.*
 import kotlin.math.abs
 

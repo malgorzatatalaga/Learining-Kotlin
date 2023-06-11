@@ -1,3 +1,5 @@
+package kotlin.documentation
+
 fun main() {
 
 //    If when is used as an expression, the else branch is mandatory,
