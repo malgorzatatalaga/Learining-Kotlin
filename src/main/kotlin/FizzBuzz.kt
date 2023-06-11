@@ -10,10 +10,15 @@ fun main() {
         }
     }
 
-    val words = listOf("dinosaur", "limousine", "magazine", "language")
-    for (word in words) {
-        if (word.startsWith("l")) {
-            println(word)
+    val a = readLine()!!.toInt()
+    val b = readLine()!!.toInt()
+
+    for (i in a..b) {
+        when {
+            i % 15 == 0 -> println("FizzBuzz")
+            i % 3 == 0 -> println("Fizz")
+            i % 5 == 0 -> println("Buzz")
+            else -> println(i)
         }
     }
 }
