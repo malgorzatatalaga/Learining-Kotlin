@@ -42,7 +42,7 @@ fun theLengthOfTheSequence() {
     while (scanner.hasNextInt()) {
         val number = scanner.nextInt()
         if (number > 0) {
-            sum ++
+            sum++
         } else {
             break
         }
