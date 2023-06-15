@@ -69,3 +69,54 @@ fun collatzConjecture(x: Int) {
         }
     }
 }
+
+fun twoNumbersInARow() {
+    val scanner = Scanner(System.`in`)
+    val length = scanner.nextInt()
+    val numbers = mutableListOf<Int>()
+    for (i in 1..length) {
+        val number = scanner.nextInt()
+        numbers.add(number)
+    }
+    val p = scanner.nextInt()
+    val m = scanner.nextInt()
+    var result = "YES"
+    for (i in 1 until numbers.size) {
+        if (numbers[i - 1] == p && numbers[i] == m) {
+            result = "NO"
+        } else if (numbers[i - 1] == m && numbers[i] == p) {
+            result = "NO"
+        }
+    }
+    println(result)
+}
+
+fun theIndexOfTheFirstMax() {
+    val scanner = Scanner(System.`in`)
+    val range = scanner.nextInt()
+    val numbers = mutableListOf<Int>()
+    while (scanner.hasNextInt()) {
+        val number = scanner.nextInt()
+        numbers.add(number)
+    }
+    val max = numbers.maxOrNull()
+    println(numbers.indexOf(max))
+}
+
+fun solution(products: List<String>, product: String) {
+    for (i in products.indices) {
+        if (products[i] == product) {
+            print(i)
+            print(" ")
+        }
+    }
+}
+fun theInformationAboutAPerson() {
+    val scanner = Scanner(System.`in`)
+    val name = scanner.next().first()
+    val surname = scanner.next()
+    val age = scanner.next()
+
+
+    println("$name. $surname, $age years old")
+}
