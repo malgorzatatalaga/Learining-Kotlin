@@ -111,12 +111,12 @@ fun solution(products: List<String>, product: String) {
         }
     }
 }
+
 fun theInformationAboutAPerson() {
     val scanner = Scanner(System.`in`)
     val name = scanner.next().first()
     val surname = scanner.next()
     val age = scanner.next()
-
 
     println("$name. $surname, $age years old")
 }

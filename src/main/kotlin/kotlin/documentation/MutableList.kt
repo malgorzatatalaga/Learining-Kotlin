@@ -44,5 +44,5 @@ fun main() {
 //    list.minOrNull() and list.maxOrNull() – search for the minimum and maximum elements in the list.
     println(numbers.minOrNull()) // 1
     println(numbers.maxOrNull()) // 5
-    
+
 }
