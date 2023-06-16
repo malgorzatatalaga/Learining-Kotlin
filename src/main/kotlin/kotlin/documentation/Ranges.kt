@@ -1,4 +1,4 @@
-package kotlin.hyperskill
+package kotlin.documentation
 
 fun main() {
     val time = readLine()?.toInt()
