@@ -1,4 +1,4 @@
-package kotlin.documentation
+package learn.documentation
 
 fun main() {
     val time = readLine()?.toInt()

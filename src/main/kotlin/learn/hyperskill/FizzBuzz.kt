@@ -1,4 +1,4 @@
-package kotlin.hyperskill
+package learn.hyperskill
 
 fun main() {
     //Note that all branch conditions are checked sequentially

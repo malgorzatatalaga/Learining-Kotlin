@@ -1,4 +1,4 @@
-package kotlin.documentation
+package learn.documentation
 
 fun main() {
 //    In the example below, the if expression is passed directly to the println()

@@ -1,4 +1,4 @@
-package kotlin.hyperskill
+package learn.hyperskill
 
 import java.util.*
 import kotlin.math.abs

@@ -1,4 +1,4 @@
-package kotlin.documentation
+package learn.documentation
 
 fun main() {
     val (var1, op, var2) = readLine()!!.split(" ")
