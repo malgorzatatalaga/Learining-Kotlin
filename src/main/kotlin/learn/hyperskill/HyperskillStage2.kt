@@ -1,9 +1,17 @@
 package learn.hyperskill
 
 import kotlin.math.hypot
+import kotlin.math.pow
 
 fun main() {
+    val input = readLine()!!
+    val number = readLine()!!.toInt()
+    when (input) {
+        "amount" -> deposit(amount = number)
+        "percent" -> deposit(percent = number)
+        "years" -> deposit(years = number)
 
+    }
 }
 
 fun FTNNumbers() {
@@ -61,18 +69,7 @@ fun perimeter(
     + hypot(x4 - x1, y4 - x1)
 }
 
-fun carPrice(old: Int = 5, kilometers: Int = 100000, maximumSpeed: Int = 120, automatic: Boolean = false) {
-    val automaticBoolean: Int = if (automatic) {
-        1
-    } else {
-        0
-    }
-    val totalPrice = 20000
-    println(if (maximumSpeed > 120) {
-        totalPrice - old * 2000 + (maximumSpeed - 120) * 100 - kilometers/10000 * 200 + automaticBoolean * 1500
-    } else if (maximumSpeed < 120) {
-        totalPrice - old * 2000 - (120 - maximumSpeed) * 100 - kilometers/10000 * 200 + automaticBoolean * 1500
-    } else {
-        totalPrice - old * 2000 - kilometers/10000 * 200 + automaticBoolean * 1500
-    })
+fun deposit(amount: Int = 1000, percent: Int = 5, years: Int = 10) {
+    val finalAmount = (amount.toDouble() * (1.00 + percent / 100.00).pow(years.toDouble())).toInt()
+    println(finalAmount)
 }
