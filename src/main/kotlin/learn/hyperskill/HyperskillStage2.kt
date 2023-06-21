@@ -73,3 +73,14 @@ fun deposit(amount: Int = 1000, percent: Int = 5, years: Int = 10) {
     val finalAmount = (amount.toDouble() * (1.00 + percent / 100.00).pow(years.toDouble())).toInt()
     println(finalAmount)
 }
+class ByteTimer(var time: Int) {
+    init {
+        time = if (time > 127) {
+            127
+        } else if (time < -128){
+            -128
+        } else {
+            time
+        }
+    }
+}
