@@ -1,7 +1,19 @@
 package learn.hyperskill
 
 fun main() {
+//  we can use it to get default values when the variable is null
+    var x: String? = null
+    x = x ?: "Hello"
+    println(x) // "Hello"
 
+    val age: Int? = null
+    val name: String? = "Bob"
+    val nickname: String? = null
+    val length: Int = nickname?.length ?: 0
+    println("$age ${name?.length} $length")
+
+    val line = readLine() ?: throw IllegalStateException()
+    println("Elvis says: $line")
 }
 
 fun makeAnException(): Nothing {
