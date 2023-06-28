@@ -8,6 +8,7 @@ fun main() {
     println(greeting.substring(1, 3))
     println(greeting.substring(2))
     println(greeting.substring(4, 5))
+    println(greeting.substring(4, 4)) // empty string
 
     // substringAfter and substringBefore
     println(greeting.substringAfter('l'))

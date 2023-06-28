@@ -52,8 +52,10 @@ fun main() {
         else -> println("Odd number greater than 10")
     }
 
-    //If when is used as an expression, the else branch is mandatory,
-    //unless the compiler can detect that all possible cases are covered by the branch conditions.
+    /*
+    If when is used as an expression, the else branch is mandatory,
+    unless the compiler can detect that all possible cases are covered by the branch conditions.
+    */
 
     val result = when ("Hello") {
         // If obj equals "1", sets result to "one"
@@ -66,9 +68,11 @@ fun main() {
 
     println(result)
 
-    //If a branch contains a block with multiple statements enclosed in {...},
-    //the last line must be a single value or a complex expression that will
-    //be performed and returned as the result of when expression.
+    /*
+    If a branch contains a block with multiple statements enclosed in {...},
+    the last line must be a single value or a complex expression that will
+    be performed and returned as the result of when expression.
+    */
 
     val blockResult = when (op) {
         "+" -> {
@@ -81,9 +85,11 @@ fun main() {
 
     println(result)
 
-//    If you work with other programming languages like Java or C#,
-//    you may note that when is similar to a switch statement.
-//    When provides more complex checking, not only directly matching a value.
+    /*
+    If you work with other programming languages like Java or C#,
+    you may note that when is similar to a switch statement.
+    When provides more complex checking, not only directly matching a value.
+    */
 
     val (var12, var22, var3) = readLine()!!.split(" ")
 
@@ -102,7 +108,6 @@ fun main() {
 
     val n = readLine()!!.toInt()
 
-//Another interesting possibility is to check whether a value belongs to a range. Take a look:
     when (n) {
         0 -> println("n is zero")
         in 1..10 -> println("n is between 1 and 10 (inclusive)")

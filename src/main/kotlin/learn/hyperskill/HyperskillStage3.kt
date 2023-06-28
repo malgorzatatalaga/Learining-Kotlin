@@ -10,7 +10,7 @@ fun main() {
     val name: String = "Bob"
     val nickname: String? = null
     val length: Int = nickname?.length ?: 0
-    println("$age ${name?.length} $length")
+    println("$age ${name.length} $length")
 
     val line = readLine() ?: throw IllegalStateException()
     println("Elvis says: $line")
@@ -73,12 +73,12 @@ fun theLuckyTicket() {
 
     // calculating the sum of the last three digits
     var secondSum = 0
-    for (i in list.size-2 downTo list.size-4) {
+    for (i in list.size - 2 downTo list.size - 4) {
         val digit = list[i].toInt()
         secondSum += digit
     }
 
-    if (firstSum ==  secondSum) println("Lucky") else println("Regular")
+    if (firstSum == secondSum) println("Lucky") else println("Regular")
 }
 
 fun createAEuphoniousWord() {
@@ -92,8 +92,8 @@ fun createAEuphoniousWord() {
     var consonantCount = 2
     var result = 0
     for (i in 0..word.length - 3) {
-        if (vowels.containsAll(listOf(word[i], word[i+1], word[i+2]))) vowelCount += 1
-        else if (!vowels.contains(word[i]) && !vowels.contains(word[i+1]) && !vowels.contains(word[i+2])) {
+        if (vowels.containsAll(listOf(word[i], word[i + 1], word[i + 2]))) vowelCount += 1
+        else if (!vowels.contains(word[i]) && !vowels.contains(word[i + 1]) && !vowels.contains(word[i + 2])) {
             consonantCount += 1
         } else {
             vowelCount = 2
