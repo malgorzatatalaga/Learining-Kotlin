@@ -1,8 +1,10 @@
 package learn.documentation
 
 fun main() {
-//    In the example below, the if expression is passed directly to the println()
-//    function without declaring a variable, and println() prints the result.
+    /*
+    In the example below, the if expression is passed directly to the println()
+    function without declaring a variable, and println() prints the result.
+    */
 
     val a = readLine()?.toInt()
     val b = readLine()?.toInt()
@@ -17,10 +19,12 @@ fun main() {
         }
     )
 
-//    Loops can be used to process characters, strings, and any other data types.
-//    The program below displays English letters in a single line.
-//    It is possible to get the next character (according to the Unicode table) using the
-//    increment operator.
+    /*
+    Loops can be used to process characters, strings, and any other data types.
+    The program below displays English letters in a single line.
+    It is possible to get the next character (according to the Unicode table) using the
+    increment operator.
+    */
 
     var letter = 'A'
 

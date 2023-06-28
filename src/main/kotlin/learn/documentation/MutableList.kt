@@ -31,9 +31,12 @@ fun main() {
     println(vowels)   // [a, o, i, e, u, y]
     println(intList1) // [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
 
-//    Other useful functions
-//    list.subList(from, to) – creates a smaller list (sublist)
-//    The element with the index to is not included.
+    /*
+    Other useful functions:
+    list.subList(from, to) – creates a smaller list (sublist)
+    The element with the index to is not included.
+    */
+
     val numbers = mutableListOf(1, 2, 3, 4, 5)
     var sublist = mutableListOf<Int>()
     if (numbers.isNotEmpty() && numbers.size >= 4) {
