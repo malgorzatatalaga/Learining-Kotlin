@@ -24,8 +24,8 @@ fun makeAnException(): Nothing {
 }
 
 fun stringException() {
-    val index = readLine()!!.toInt()
-    val word = readLine()!!
+    val index = readln().toInt()
+    val word = readln()
     println(
         if (index > word.length - 1 || index < 0) {
             throw Exception("There isn't such an element in the given string, please fix the index!")
@@ -45,15 +45,15 @@ fun elvisOperator() {
 }
 
 fun compareCaseInsensitive() {
-    val s1 = readLine()!!.toLowerCase()
-    val s2 = readLine()!!.toLowerCase()
+    val s1 = readln().toLowerCase()
+    val s2 = readln().toLowerCase()
 
     if (s1 == s2) println(true) else println(false)
 }
 
 // getting substrings
 fun exchange() {
-    val s1 = readLine()!!
+    val s1 = readln()
     val first = s1.first()
     val last = s1.last()
     val s2 = s1.replace(last, first)
@@ -62,7 +62,7 @@ fun exchange() {
 
 // processing strings
 fun theLuckyTicket() {
-    val number = readLine()!!
+    val number = readln()
     var list = number.split("")
     // calculating the sum of the first three digits
     var firstSum = 0
@@ -86,7 +86,7 @@ fun createAEuphoniousWord() {
     A word is considered euphonious if it doesn't have three or more vowels or consonants in a row.
     Otherwise, it is considered discordant.
     */
-    val word = readLine()!!
+    val word = readln()
     val vowels = listOf('a', 'o', 'e', 'i', 'u', 'y')
     var vowelCount = 2
     var consonantCount = 2

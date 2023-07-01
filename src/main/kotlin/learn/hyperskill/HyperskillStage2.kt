@@ -5,26 +5,25 @@ import kotlin.math.hypot
 import kotlin.math.pow
 
 fun main() {
-    val input = readLine()!!
-    val number = readLine()!!.toInt()
+    val input = readln()
+    val number = readln().toInt()
     when (input) {
         "amount" -> deposit(amount = number)
         "percent" -> deposit(percent = number)
         "years" -> deposit(years = number)
     }
 
-    val number1 = readLine()!!.toInt()
-    val number2 = readLine()!!.toInt()
-    val number3 = readLine()!!.toInt()
+    val number1 = readln().toInt()
+    val number2 = readln().toInt()
+    val number3 = readln().toInt()
     val output = (number1..number2).count { it % number3 == 0 }
 
     println(output)
 }
 
 fun FTNNumbers() {
-    val number = readLine()?.toInt()
 
-    when (number) {
+    when (readln().toInt()) {
         0, 1, 2, 3, 5, 8, 13, 21, 34, 55 -> println("F")
         0, 1, 3, 6, 10, 15, 21, 28, 36, 45 -> println("T")
         1, 10, 100, 1000, 10000, 100000 -> println("P")
@@ -33,8 +32,7 @@ fun FTNNumbers() {
 }
 
 fun f(x: Double): Double {
-    // call your implemented functions here
-    val x = readLine()!!.toDouble()
+    val x = readln().toDouble()
 
     val solution: Double = when {
         x <= 0.0 -> f1(x)
@@ -94,13 +92,13 @@ class ByteTimer(var time: Int) {
 }
 
 fun counting() {
-    val nNumber = readLine()!!.toInt()
+    val nNumber = readln().toInt()
     var numbers = emptyArray<Int>()
     for (i in 1..nNumber) {
-        val number = readLine()!!.toInt()
+        val number = readln().toInt()
         numbers += number
     }
-    val mNumber = readLine()!!.toInt()
+    val mNumber = readln().toInt()
     val count = numbers.count { it == mNumber }
     println(count)
 

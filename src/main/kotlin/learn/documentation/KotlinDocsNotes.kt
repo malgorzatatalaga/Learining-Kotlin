@@ -6,13 +6,13 @@ fun main() {
     function without declaring a variable, and println() prints the result.
     */
 
-    val a = readLine()?.toInt()
-    val b = readLine()?.toInt()
+    val a = readln().toInt()
+    val b = readln().toInt()
 
     println(
         if (a == b) {
             "a equal b"
-        } else if (a!! > b!!) {
+        } else if (a > b) {
             "a is greater than b"
         } else {
             "a is less than b"

@@ -12,8 +12,8 @@ fun main() {
         }
     }
 
-    val a = readLine()!!.toInt()
-    val b = readLine()!!.toInt()
+    val a = readln().toInt()
+    val b = readln().toInt()
 
     for (i in a..b) {
         when {

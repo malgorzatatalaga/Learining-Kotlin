@@ -1,7 +1,7 @@
 package learn.documentation
 
 fun main() {
-    val (var1, op, var2) = readLine()!!.split(" ")
+    val (var1, op, var2) = readln().split(" ")
 
     val a = var1.toInt()
     val b = var2.toInt()
@@ -91,7 +91,7 @@ fun main() {
     When provides more complex checking, not only directly matching a value.
     */
 
-    val (var12, var22, var3) = readLine()!!.split(" ")
+    val (var12, var22, var3) = readln().split(" ")
 
     val a1 = var12.toInt()
     val b1 = var22.toInt()
@@ -106,9 +106,7 @@ fun main() {
         }
     )
 
-    val n = readLine()!!.toInt()
-
-    when (n) {
+    when (readln().toInt()) {
         0 -> println("n is zero")
         in 1..10 -> println("n is between 1 and 10 (inclusive)")
         in 25..30 -> println("n is between 25 and 30 (inclusive)")

@@ -10,7 +10,7 @@ fun main() {
 
 //  The sum of integers from a to b:
     var result = 0
-    val number1 = readLine()!!.toInt()
+    val number1 = readln().toInt()
     val number2 = readLine()!!.toInt()
 
     for (i in number1..number2) {
@@ -20,10 +20,10 @@ fun main() {
     println(result)
 
 //  The roots of equation
-    val a = readLine()!!.toInt()
-    val b = readLine()!!.toInt()
-    val c = readLine()!!.toInt()
-    val d = readLine()!!.toInt()
+    val a = readln().toInt()
+    val b = readln().toInt()
+    val c = readln().toInt()
+    val d = readln().toInt()
 
     for (i in 1..1000) {
         if ((a * i * i * i + b * i * i + c * i + d) == 0) {
