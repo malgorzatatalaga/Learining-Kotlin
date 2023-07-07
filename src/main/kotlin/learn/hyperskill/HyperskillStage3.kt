@@ -111,4 +111,22 @@ fun createAEuphoniousWord() {
     println(result)
 }
 
+fun timeDifference() {
+    /*We are going to consider two moments in time that happened on the same day — hours, minutes,
+    and seconds. It is known that the second moment happened not earlier than the first one.
+    Find how many seconds passed between the two moments.
+     */
+    val hours1 = readln().toInt()
+    val minutes1 = readln().toInt()
+    val seconds1 = readln().toInt()
+    val hours2 = readln().toInt()
+    val minutes2 = readln().toInt()
+    val seconds2 = readln().toInt()
+
+    val hoursDifference = hours2 - hours1
+    val minutesDifference = minutes2 - minutes1
+    val secondsDifference = seconds2 - seconds1 + minutesDifference * 60 + hoursDifference * 3600
+    println(secondsDifference)
+}
+
 
