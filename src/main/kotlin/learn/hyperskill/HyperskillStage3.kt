@@ -129,4 +129,12 @@ fun timeDifference() {
     println(secondsDifference)
 }
 
+fun isGreater(number1: Int, number2: Int, number3: Int, number4: Int) :Boolean {
+    /*
+    Write a function called isGreater() that takes four integer numbers and returns true
+    if a sum of the first two arguments is greater than a sum of the third and fourth argument.
+    Otherwise, return false.
+     */
+    return number1 + number2 > number3 + number4
+}
 
