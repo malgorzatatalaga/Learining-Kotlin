@@ -1,21 +1,7 @@
 package learn.hyperskill
 
 fun main() {
-    // we can use it to get default values when the variable is null
-    var x: String? = null
-    x = x ?: "Hello"
-    println(x) // "Hello"
 
-    val age: Int? = null
-    val name: String = "Bob"
-    val nickname: String? = null
-    val length: Int = nickname?.length ?: 0
-    println("$age ${name.length} $length")
-
-    val line = readLine() ?: throw IllegalStateException()
-    println("Elvis says: $line")
-
-    createAEuphoniousWord()
 }
 
 
@@ -138,3 +124,19 @@ fun isGreater(number1: Int, number2: Int, number3: Int, number4: Int) :Boolean {
     return number1 + number2 > number3 + number4
 }
 
+class Cups(val amount: Int) {
+    /*
+    There is an amount parameter in the class Cups, which shows the number of cups.
+    Override toString() so that when you print an object of the Cups class, the number of cups is printed.
+    */
+    override fun toString(): String {
+        return amount.toString()
+    }
+}
+
+open class Coffee(val cost: Int, val volume: Int)
+class Latte(val milk: String, cost: Int, volume: Int) : Coffee(cost, volume) {
+    override fun toString(): String {
+        return super.toString() + "; milk=$milk"
+    }
+}
