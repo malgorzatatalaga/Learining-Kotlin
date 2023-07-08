@@ -27,5 +27,4 @@ data class Client(val name: String, val age: Int, val gender: String) {
     override fun toString(): String {
         return "Client(name='$name', age=$age, gender='$gender', balance=$balance)"
     }
-
 }
