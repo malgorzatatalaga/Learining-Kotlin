@@ -1,19 +1,4 @@
-package learn.documentation
-
-fun main() {
-    val spidermanBook = Comics(60, "The Universe", 8.99F)
-    println(spidermanBook.getFullInfo())
-
-    val centralBooklet = Booklet(5, 0.14F)
-    println(centralBooklet.getUSDCost())
-
-    println(isBigBook(spidermanBook))
-    println(isBigBook(centralBooklet))
-}
-
-fun isBigBook(book: Book): Boolean {
-    return book.pages >= 100
-}
+package learn.documentation.oop
 
 open class Book(val pages: Int, val author: String, var cost: Float = 0F) {
     fun getFullInfo(): String {
@@ -31,4 +16,8 @@ class Booklet(pages: Int, cost: Float) : Book(pages, "", cost) {
     fun getEuroCost(): String {
         return "€$cost cost"
     }
+}
+
+fun isBigBook(book: Book): Boolean {
+    return book.pages >= 100
 }
