@@ -1,5 +1,10 @@
 package learn.hyperskill
 
+import kotlinx.datetime.DateTimePeriod
+import kotlinx.datetime.Instant
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.plus
+
 fun main() {
 
 }
@@ -146,4 +151,10 @@ data class Box(val height: Int, val length: Int, val width: Int) {
     override fun toString(): String {
         return "Box(height=$height, width=$width, size=$size)"
     }
+}
+
+fun nextMonth(date: String): String {
+    val instant1 = Instant.parse(date)
+    val period: DateTimePeriod = DateTimePeriod(0,1)
+    return instant1.plus(period, TimeZone.UTC).toString()
 }
