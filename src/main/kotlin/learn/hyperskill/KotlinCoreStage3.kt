@@ -4,6 +4,7 @@ import kotlinx.datetime.DateTimePeriod
 import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.plus
+import java.util.*
 
 fun main() {
 
@@ -35,8 +36,8 @@ fun elvisOperator() {
 }
 
 fun compareCaseInsensitive() {
-    val s1 = readln().toLowerCase()
-    val s2 = readln().toLowerCase()
+    val s1 = readln().lowercase(Locale.getDefault())
+    val s2 = readln().lowercase(Locale.getDefault())
 
     if (s1 == s2) println(true) else println(false)
 }
@@ -119,7 +120,7 @@ fun timeDifference() {
     println(secondsDifference)
 }
 
-fun isGreater(number1: Int, number2: Int, number3: Int, number4: Int) :Boolean {
+fun isGreater(number1: Int, number2: Int, number3: Int, number4: Int): Boolean {
     /*
     Write a function called isGreater() that takes four integer numbers and returns true
     if a sum of the first two arguments is greater than a sum of the third and fourth argument.
@@ -146,7 +147,7 @@ class Latte(val milk: String, cost: Int, volume: Int) : Coffee(cost, volume) {
 }
 
 data class Box(val height: Int, val length: Int, val width: Int) {
-//  Modify the data class in order to print only the height, width, and size values.
+    //  Modify the data class in order to print only the height, width, and size values.
     var size: Int = height + length + width
     override fun toString(): String {
         return "Box(height=$height, width=$width, size=$size)"
@@ -155,6 +156,18 @@ data class Box(val height: Int, val length: Int, val width: Int) {
 
 fun nextMonth(date: String): String {
     val instant1 = Instant.parse(date)
-    val period: DateTimePeriod = DateTimePeriod(0,1)
+    val period: DateTimePeriod = DateTimePeriod(0, 1)
     return instant1.plus(period, TimeZone.UTC).toString()
+}
+
+fun theLargestElement() {
+    val scanner = Scanner(System.`in`)
+    var max = 0
+    while (scanner.hasNext()) {
+        val number = scanner.nextInt()
+        if (number > max) {
+            max = number
+        }
+    }
+    println(max)
 }
