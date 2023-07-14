@@ -1,4 +1,4 @@
-package learn.documentation
+package learn.documentation.controlstructures
 
 fun main() {
     val (var1, op, var2) = readln().split(" ")

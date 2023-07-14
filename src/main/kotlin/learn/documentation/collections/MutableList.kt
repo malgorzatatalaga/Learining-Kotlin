@@ -1,4 +1,4 @@
-package learn.documentation
+package learn.documentation.collections
 
 fun main() {
 //    Outputting a list

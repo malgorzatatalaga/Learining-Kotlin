@@ -1,4 +1,4 @@
-package learn.documentation
+package learn.documentation.oop
 
 fun main() {
     val smartOne = Smartphone("Ericsong")

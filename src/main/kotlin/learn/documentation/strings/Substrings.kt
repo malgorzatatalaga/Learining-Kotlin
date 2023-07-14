@@ -1,4 +1,4 @@
-package learn.documentation
+package learn.documentation.strings
 
 fun main() {
     val greeting = "Hello"
