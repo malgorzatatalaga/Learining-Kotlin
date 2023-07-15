@@ -1,5 +1,7 @@
 package learn.collections
 
+import java.util.*
+
 fun main() {
     val numbers = IntArray(10) { i -> i + 1 }
     println("Numbers: ${numbers.joinToString()}")
@@ -24,5 +26,47 @@ fun main() {
     newEmptyArray += "are"
     newEmptyArray += "cute"
     println(newEmptyArray.joinToString())
+}
 
+fun triples() {
+    val scanner = Scanner(System.`in`)
+    var triple = 0
+    val size = scanner.nextInt()
+    var numbers = arrayOf(size)
+
+    while (scanner.hasNext()) {
+        val number = scanner.nextInt()
+        numbers += number
+    }
+
+    numbers.forEach { i -> println(i) }
+
+    for (i in 0 until size - 2) {
+        if (numbers[i] == numbers[i + 1] - 1 && numbers[i] == numbers[i + 2] - 2) {
+            triple += 1
+        }
+    }
+
+    println(triple)
+}
+
+fun counting() {
+    val nNumber = readln().toInt()
+    var numbers = emptyArray<Int>()
+    for (i in 1..nNumber) {
+        val number = readln().toInt()
+        numbers += number
+    }
+    val mNumber = readln().toInt()
+    val count = numbers.count { it == mNumber }
+    println(count)
+
+//    yes/no output
+    println(
+        if (numbers.contains(mNumber)) {
+            "YES"
+        } else {
+            "NO"
+        }
+    )
 }

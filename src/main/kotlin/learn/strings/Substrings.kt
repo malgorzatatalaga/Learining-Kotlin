@@ -29,3 +29,11 @@ fun main() {
     val exampleFirst = "one one two three"
     println(example.replaceFirst("one", "two"))
 }
+
+fun exchange() {
+    val s1 = readln()
+    val first = s1.first()
+    val last = s1.last()
+    val s2 = s1.replace(last, first)
+    println(s2.replaceFirst(first, last))
+}

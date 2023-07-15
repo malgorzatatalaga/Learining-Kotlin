@@ -103,3 +103,9 @@ fun main() {
     val before = instant1.minus(period, TimeZone.UTC)
     println("$instant1 before $period: $before")
 }
+
+fun nextMonth(date: String): String {
+    val instant1 = Instant.parse(date)
+    val period: DateTimePeriod = DateTimePeriod(0, 1)
+    return instant1.plus(period, TimeZone.UTC).toString()
+}
